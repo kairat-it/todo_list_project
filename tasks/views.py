@@ -5,7 +5,7 @@ from .forms import TaskForm
 
 def task_list(request):
     tasks = Task.objects.all()
-    return render(request, 'tasks/task_list.html', {'tasks': tasks})
+    return render(request, 'task_list.html', {'tasks': tasks})
 
 
 def add_task(request):
@@ -16,7 +16,7 @@ def add_task(request):
             return redirect('task_list')
     else:
         form = TaskForm()
-    return render(request, 'tasks/add_task.html', {'form': form})
+    return render(request, 'add_task.html', {'form': form})
 
 
 def delete_task(request, task_id):
