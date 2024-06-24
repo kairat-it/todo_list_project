@@ -1,10 +1,10 @@
 from django.db import models
 
-
 class Task(models.Model):
+    objects = None
     STATUS_CHOICES = [
-        ('new', 'Новая'),
-        ('in_progress', 'В процессе'),
+        ('new', 'Новая задача'),
+        ('in_progress', 'Выполняется'),
         ('done', 'Сделано'),
     ]
 
