@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Task</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Добавить задачу</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Добавить задачу</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="btn btn-success">Добавить</button>
+            <button type="submit" class="btn btn-primary">Добавить</button>
         </form>
-        <a href="{% url 'task_list' %}" class="btn btn-secondary mt-3">Назад к задачам</a>
     </div>
-</body>
-</html>
+{% endblock %}

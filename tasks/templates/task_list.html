@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">To-Do List</h1>
-        <a href="{% url 'add_task' %}" class="btn btn-primary mb-3">Добавить задачу</a>
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Список задач</h1>
         <ul class="list-group">
             {% for task in tasks %}
                 <li class="list-group-item">
@@ -18,6 +13,4 @@
             {% endfor %}
         </ul>
     </div>
-</body>
-</html>
-
+{% endblock %}
