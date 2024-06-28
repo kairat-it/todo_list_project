@@ -27,4 +27,4 @@ def delete_task(request, task_id):
 
 def task_detail(request, task_id):
     task = get_object_or_404(Task, id=task_id)
-    return render(request, 'tasks/task_detail.html', {'task': task})
+    return render(request, 'task_detail.html', {'task': task})
