@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>О задаче</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Описание:</strong> {{ task.description }}</li>
+            <li class="list-group-item"><strong>Статус:</strong> {{ task.get_status_display }}</li>
+            <li class="list-group-item"><strong>Дата выполнения:</strong> {{ task.due_date }}</li>
+            <li class="list-group-item"><strong>Подробное описание:</strong> {{ task.detail_views }}</li>
+        </ul>
+        <a href="{% url 'task_list' %}" class="btn btn-secondary mt-3">Вернуться к списку</a>
+    </div>
+{% endblock %}
