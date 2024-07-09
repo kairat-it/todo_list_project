@@ -40,7 +40,7 @@ def task_update(request, pk):
             return redirect('task_list')
     else:
         form = TaskForm(instance=task)
-    return render(request, 'tasks/task_form.html', {'form': form, 'submit_button_text': 'Update Task'})
+    return render(request, 'task_form.html', {'form': form, 'submit_button_text': 'Обновить'})
 
 def task_create(request):
     if request.method == 'POST':
@@ -50,7 +50,7 @@ def task_create(request):
             return redirect('task_list')
     else:
         form = TaskForm()
-    return render(request, 'tasks/task_form.html', {'form': form, 'submit_button_text': 'Create Task'})
+    return render(request, 'task_form.html', {'form': form, 'submit_button_text': 'Создать задачу'})
 
 
 
