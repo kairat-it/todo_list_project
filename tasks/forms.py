@@ -12,3 +12,6 @@ class TaskForm(forms.ModelForm):
             'due_date': 'Дата выполнения',
             'detail_views': 'Подробнее'
         }
+        widgets = {
+            'due_date': forms.TextInput(attrs={'type': 'date'}),
+        }
