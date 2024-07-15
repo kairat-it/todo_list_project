@@ -1,1 +1,96 @@
-[{"model": "tasks.task", "pk": 1, "fields": {"description": "Купить продукты", "status": "new", "due_date": "2024-06-30", "detail_views": "Подробное описание: Купить продукты"}}, {"model": "tasks.task", "pk": 2, "fields": {"description": "Сделать домашнее задание", "status": "in_progress", "due_date": "2024-07-01", "detail_views": "Подробное описание: Сделать домашнее задание"}}, {"model": "tasks.task", "pk": 4, "fields": {"description": "Плавание в субботу", "status": "new", "due_date": "2024-06-30", "detail_views": "Подробное описание: Плавание в субботу"}}, {"model": "tasks.task", "pk": 5, "fields": {"description": "Сделать домашнее задание по Python ", "status": "in_progress", "due_date": "2024-07-01", "detail_views": "Подробное описание: Сделать домашнее задание по Python "}}, {"model": "tasks.task", "pk": 6, "fields": {"description": "Сьездить к родственникам", "status": "done", "due_date": "2024-06-25", "detail_views": "Подробное описание: Сьездить к родственникам"}}, {"model": "tasks.task", "pk": 7, "fields": {"description": "qwertz", "status": "new", "due_date": "2024-06-10", "detail_views": "Подробное описание: qwertz"}}, {"model": "tasks.task", "pk": 8, "fields": {"description": "ПРОВЕРКА", "status": "new", "due_date": "2024-06-10", "detail_views": "Подробное описание: ПРОВЕРКА"}}]
+[
+  {
+    "model": "tasks.task", "pk": 1, "fields": {"description": "Купить продукты",
+    "status": "new", "due_date": "2024-06-30","updated_at": "2024-05-15T12:00:00Z",
+    "detail_views": "Подробное описание: Купить продукты"}
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2, "fields": {"description": "Сделать домашнее задание",
+    "status": "in_progress",
+    "due_date": "2024-07-01","updated_at": "2024-04-15T12:00:00Z",
+    "detail_views": "Подробное описание: Сделать домашнее задание"}
+  },
+  {
+    "model": "tasks.task", "pk": 4, "fields": {"description": "Плавание в субботу",
+    "status": "new",
+    "due_date": "2024-06-30","updated_at": "2024-03-15T12:00:00Z",
+    "detail_views": "Подробное описание: Плавание в субботу"}
+  },
+  {
+    "model": "tasks.task", "pk": 5, "fields": {"description": "Сделать домашнее задание по Python ",
+    "status": "in_progress",
+    "due_date": "2024-07-01","updated_at": "2024-04-16T12:00:00Z",
+    "detail_views": "Подробное описание: Сделать домашнее задание по Python "}
+  },
+  {"model": "tasks.task", "pk": 6, "fields": {"description": "Сьездить к родственникам",
+    "status": "done", "due_date": "2024-06-25","updated_at": "2024-07-14T12:00:00Z",
+    "detail_views": "Подробное описание: Сьездить к родственникам"}
+  },
+  {
+    "model": "tasks.task", "pk": 7, "fields": {"description": "qwertz", "status": "new",
+    "due_date": "2024-06-10","updated_at": "2024-03-21T12:00:00Z",
+    "detail_views": "Подробное описание: qwertz"}
+  },
+  {
+    "model": "tasks.task", "pk": 8, "fields": {"description": "ПРОВЕРКА",
+    "status": "new",
+    "due_date": "2024-06-10","updated_at": "2024-02-15T12:00:00Z",
+    "detail_views": "Подробное описание: ПРОВЕРКА"}
+  },
+  {
+        "model": "tasks.task",
+        "pk": 9,
+        "fields": {
+            "description": "Исправлена ошибка при входе в систему",
+            "status": "done",
+            "task_type": "bug",
+            "due_date": "2024-06-01",
+            "updated_at": "2024-06-15T12:00:00Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 10,
+        "fields": {
+            "description": "Внедрить регистрацию пользователей",
+            "status": "in_progress",
+            "task_type": "feature",
+            "due_date": "2024-07-01",
+            "updated_at": "2024-07-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 11,
+        "fields": {
+            "description": "Посмотреть отчеты по работе менеджеров",
+            "status": "new",
+            "task_type": "task",
+            "due_date": "2024-08-01",
+            "updated_at": "2024-08-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 12,
+        "fields": {
+            "description": "Согласовать план продаж",
+            "status": "done",
+            "task_type": "bug",
+            "due_date": "2024-07-01",
+            "updated_at": "2024-07-05T12:00:00Z"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 13,
+        "fields": {
+            "description": "Читать по книге в неделю",
+            "status": "in_progress",
+            "task_type": "feature",
+            "due_date": "2024-07-10",
+            "updated_at": "2024-07-02T12:00:00Z"
+        }
+    }
+]
